@@ -1,1 +1,1 @@
-/// <reference types="astro/client" />
+w/// <reference types="astro/client" />

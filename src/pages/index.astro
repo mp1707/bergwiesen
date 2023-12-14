@@ -1,25 +1,44 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import whiteLogo from "../logo_white.png";
+import pic1 from "../Cpl_-Sommer-131.jpg";
 ---
 
 <Layout title="Campingpark Bergwiesen">
-  <main>
-    <h1>hi mom</h1>
+  <main class="p-2">
+    <div class="p-16 flex flex-col items-center gap-10">
+      <h1 class="text-stone-100 text-2xl">Willkommen im Schwarzwald</h1>
+      <img src={whiteLogo.src} alt="logo" class="w-full lg:w-1/3" />
+    </div>
+    <article class="flex flex-wrap gap-5 text-sm w-full justify-center">
+      <div
+        class="bg-stone-100 bg-opacity-75 rounded-lg p-5 flex flex-col gap-2 lg:w-1/2"
+      >
+        <h1 class="font-bold">Unser Platz</h1>
+        <p>
+          Am Waldrand oberhalb des Ortes Malsch-Waldprechtsweier liegt zwischen
+          Karlsruhe und Rastatt unser ganzjährig geöffneter Campingplatz. Dieser
+          liegt am Rande des nördlichen Schwarzwaldes und bietet Ihnen nicht nur
+          eine himmlische Ruhe, sondern auch viele Möglichkeiten der
+          Freizeitgestaltung. Verbringen Sie ein paar unbeschwerte Tage mit
+          Ihrer ganzen Familie inmitten einer herrlichen Natur und in sauberer
+          Luft. Ideal auch für Hundebesitzer.
+        </p>
+        <p>
+          Die gesamte Platzanlage umfasst eine Fläche von 3,5 ha. mit insgesamt
+          220 Stellplätze, davon 170 Dauer.- und 50 Touristenplätze sowie eine
+          große Zeltwiese mit Kinderspielplatz und Bouleanlage. Unser
+          Sanitärgebäude ist im Winter beheizt, und verfügt über getrennte
+          Waschräume, Einzel-Wasch-und Duschkabinen, einen Separaten
+          Chemie-Toilettenausguss und eine Behindertentoilette mit Dusche. Eine
+          Spülküche und Baby-Wickelstation.
+        </p>
+      </div>
+      <img
+        src={pic1.src}
+        alt="logo"
+        class="w-full rounded-lg lg:w-1/3 object-cover object-center"
+      />
+    </article>
   </main>
 </Layout>
-
-
-<style>
-  main {
-    margin: auto;
-    padding: 1rem;
-    width: 100%;
-    height: 100vh;
-    /* color: white; */
-    /* font-size: 20px; */
-    /* line-height: 1.6; */
-    /* background-color: #f8f8f8; */
-    /* background-image: url("/bg.jpg");
-	background-size: cover; */
-  }
-</style>
