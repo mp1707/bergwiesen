@@ -1,0 +1,10 @@
+---
+interface Props {
+  addStyles: string;
+}
+const { addStyles }: Props = Astro.props;
+---
+
+<div class={`bg-stone-100 bg-opacity-90 rounded-lg p-4 ${addStyles}`}>
+  <slot />
+</div>
