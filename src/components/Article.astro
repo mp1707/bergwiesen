@@ -1,9 +1,12 @@
 ---
-const {} = Astro.props;
+interface Props {
+  addStyles?: string;
+}
+const { addStyles }: Props = Astro.props;
 ---
 
 <article
-  class="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-5 text-sm w-full justify-center"
+  class={`w-full md:w-2/3 flex flex-col lg:flex-row items-center lg:items-start gap-5 text-sm justify-center ${addStyles}`}
 >
   <slot />
 </article>

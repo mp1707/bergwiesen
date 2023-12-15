@@ -1,21 +1,31 @@
 import React from "react";
 
-const MobileNav = ({ currentPage }: { currentPage: string }) => {
+const MobileNav = ({
+  currentPage,
+  title,
+}: {
+  currentPage: string;
+  title: string;
+}) => {
   const [toggled, setToggled] = React.useState(false);
 
   return (
-    <nav className="lg:hidden flex justify-between items-center font-medium">
+    <nav className="lg:hidden flex justify-between items-center font-medium w-full">
       <div
         onClick={() => setToggled((prevToggle) => !prevToggle)}
-        className={` flex items-center gap-2 cursor-pointer ${
+        className={` flex items-center w-full justify-between cursor-pointer ${
           toggled ? "opacity-0" : ""
         }`}
       >
-        <h1 className="lg:hidden">Menü</h1>
-        <div className="space-y-1 ">
-          <span className="block h-0.5 w-8 bg-black"></span>
-          <span className="block h-0.5 w-7 bg-black"></span>
-          <span className="block h-0.5 w-6 bg-black"></span>
+       <div/>
+        <i className="">{title}</i>
+        <div className="flex items-center gap-2">
+          <h1 className="lg:hidden">Menü</h1>
+          <div className="space-y-1 ">
+            <span className="block h-0.5 w-8 bg-black"></span>
+            <span className="block h-0.5 w-7 bg-black"></span>
+            <span className="block h-0.5 w-6 bg-black"></span>
+          </div>
         </div>
       </div>
       {toggled && (
@@ -46,7 +56,7 @@ const MobileNav = ({ currentPage }: { currentPage: string }) => {
               <a
                 href="/gastronomie"
                 className={
-                  currentPage === "/gastronomie"
+                  currentPage === "gastronomie"
                     ? "bg-slate-500 text-stone-100 px-2 py-1 rounded-lg"
                     : "px-2 py-1"
                 }
