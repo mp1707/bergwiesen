@@ -18,7 +18,6 @@ const MobileNav = ({ currentPage }: { currentPage: string }) => {
           <span className="block h-0.5 w-6 bg-black"></span>
         </div>
       </div>
-
       {toggled && (
         <div className="fixed flex bg-stone-100 bg-opacity-90 bottom-0 left-0 w-full h-screen items-center justify-center z-40">
           <div
