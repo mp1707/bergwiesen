@@ -1,17 +1,22 @@
 import React from "react";
 
-const MobileNav = () => {
+const MobileNav = ({ currentPage }: { currentPage: string }) => {
   const [toggled, setToggled] = React.useState(false);
 
   return (
     <nav className="lg:hidden flex justify-between items-center font-medium">
       <div
         onClick={() => setToggled((prevToggle) => !prevToggle)}
-        className={`space-y-1 cursor-pointer ${toggled ? "opacity-0" : ""}`}
+        className={` flex items-center gap-2 cursor-pointer ${
+          toggled ? "opacity-0" : ""
+        }`}
       >
-        <span className="block h-0.5 w-8 bg-black"></span>
-        <span className="block h-0.5 w-7 bg-black"></span>
-        <span className="block h-0.5 w-6 bg-black"></span>
+        <h1 className="lg:hidden">Menü</h1>
+        <div className="space-y-1 ">
+          <span className="block h-0.5 w-8 bg-black"></span>
+          <span className="block h-0.5 w-7 bg-black"></span>
+          <span className="block h-0.5 w-6 bg-black"></span>
+        </div>
       </div>
 
       {toggled && (
@@ -27,25 +32,88 @@ const MobileNav = () => {
           </div>
           <ul className=" flex flex-col gap-16 items-center font-l text-lg">
             <li>
-              <a href="/">Startseite</a>
+              <a
+                href="/"
+                className={
+                  currentPage === "/"
+                    ? "bg-slate-500 text-stone-100 px-2 py-1 rounded-lg"
+                    : "px-2 py-1"
+                }
+              >
+                Startseite
+              </a>
             </li>
             <li>
-              <a href="/Gastronomie">Gastronomie</a>
+              <a
+                href="/gastronomie"
+                className={
+                  currentPage === "/gastronomie"
+                    ? "bg-slate-500 text-stone-100 px-2 py-1 rounded-lg"
+                    : "px-2 py-1"
+                }
+              >
+                Gastronomie
+              </a>
             </li>
             <li>
-              <a href="/Countryfest">Countryfest</a>
+              <a
+                href="/countryfest"
+                className={
+                  currentPage === "/countryfest"
+                    ? "bg-slate-500 text-stone-100 px-2 py-1 rounded-lg"
+                    : "px-2 py-1"
+                }
+              >
+                Countryfest
+              </a>
             </li>
             <li>
-              <a href="/Preise">Preise</a>
+              <a
+                href="preise"
+                className={
+                  currentPage === "/preise"
+                    ? "bg-slate-500 text-stone-100 px-2 py-1 rounded-lg"
+                    : "px-2 py-1"
+                }
+              >
+                Preise
+              </a>
             </li>
             <li>
-              <a href="/Service">Service</a>
+              <a
+                href="/service"
+                className={
+                  currentPage === "/service"
+                    ? "bg-slate-500 text-stone-100 px-2 py-1 rounded-lg"
+                    : "px-2 py-1"
+                }
+              >
+                Service
+              </a>
             </li>
             <li>
-              <a href="/Kontakt">Kontakt</a>
+              <a
+                href="/kontakt"
+                className={
+                  currentPage === "/kontakt"
+                    ? "bg-slate-500 text-stone-100 px-2 py-1 rounded-lg"
+                    : "px-2 py-1"
+                }
+              >
+                Kontakt
+              </a>
             </li>
             <li>
-              <a href="/Impressum">Impressum</a>
+              <a
+                href="/impressum"
+                className={
+                  currentPage === "/impressum"
+                    ? "bg-slate-500 text-stone-100 px-2 py-1 rounded-lg"
+                    : "px-2 py-1"
+                }
+              >
+                Impressum
+              </a>
             </li>
           </ul>
         </div>
