@@ -69,7 +69,7 @@ const MobileNav = ({ currentPage }: { currentPage: string }) => {
             </li>
             <li>
               <a
-                href="preise"
+                href="/preise"
                 className={
                   currentPage === "/preise"
                     ? "bg-slate-500 text-stone-100 px-2 py-1 rounded-lg"
