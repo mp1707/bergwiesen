@@ -8,15 +8,28 @@ import ContentCard from "../components/ContentCard.astro";
 <Layout title="Kontakt" currentPage="kontakt">
   <h1 class="text-white font-bold py-6 text-xl lg:text-3xl">Kontakt</h1>
   <div class="flex flex-col gap-3 w-full items-center">
-    <Image
-      src={img.src}
-      alt="Wohnwägen"
-      addStyles="object-cover h-full"
-      client:load
-    />
-    <ContentCard addStyles="flex flex-col gap-2">
-      <h1 class="font-bold">E-Mail</h1>
-      <p>E-Mail-Formular</p>
-    </ContentCard>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8086057827727!2d8.336179712858677!3d48.861859971213065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47971b00650f9005%3A0x892e035eaf222bd8!2sCampingfreunde%20Bergwiesen%20Malsch%20e.V.%20Elke%20und%20Peter%20Meffert!5e0!3m2!1sde!2sde!4v1703687084342!5m2!1sde!2sde"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="rounded-lg w-full md:w-2/3 h-96"></iframe><div class="flex gap-3">
+      <div class="flex flex-col md:flex-row gap-3 w-full">
+        <ContentCard addStyles="flex flex-col gap-2">
+          <h1 class="font-bold">Adresse</h1>
+          <p>Waldenfelsstrasse 1</p>
+          <p>D – 76316 Malsch / Waldprechtsweier</p>
+          <p>GPS 48° 51′ 41″ N / 8° 20′ 19″ E</p>
+        </ContentCard>
+        <ContentCard addStyles="flex flex-col gap-2">
+          <h1 class="font-bold">Kontakt</h1>
+          <p>Wir freuen uns über Ihren Anruf.</p>
+          <p>Tel.: 07246 – 1467</p>
+          <p>Fax: 07246 – 5762</p>
+          <p>E-Mail: email@campingpark-bergwiesen.eu</p>
+        </ContentCard>
+      </div>
+    </div>
   </div>
 </Layout>
