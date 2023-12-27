@@ -1,8 +1,22 @@
 ---
-import ContentCard from "../components/ContentCard.astro";
 import Layout from "../layouts/Layout.astro";
+import img from "../assets/Anfahrt.jpeg";
+import Image from "../components/Image";
+import ContentCard from "../components/ContentCard.astro";
 ---
 
 <Layout title="Kontakt" currentPage="kontakt">
   <h1 class="text-white font-bold py-6 text-xl lg:text-3xl">Kontakt</h1>
+  <div class="flex flex-col gap-3 w-full items-center">
+    <Image
+      src={img.src}
+      alt="Wohnwägen"
+      addStyles="object-cover h-full"
+      client:load
+    />
+    <ContentCard addStyles="flex flex-col gap-2">
+      <h1 class="font-bold">E-Mail</h1>
+      <p>E-Mail-Formular</p>
+    </ContentCard>
+  </div>
 </Layout>

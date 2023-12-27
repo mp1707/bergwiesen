@@ -27,86 +27,80 @@ const images = [
     alt="logo"
     class="w-2/3 md:w-3/5 lg:w-1/4 mt-12 mb-4"
   />
-  <div class="flex flex-col gap-6 items-center">
-    <Article>
-      <h1
-        class="text-xl lg:text-2xl text-stone-100 text-center md:text-left px-2"
-      >
-        Unser Platz
-      </h1>
-      <div
-        class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
-      >
-        <Image src={platz6.src} alt="Wohnwägen" client:load />
-        <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
-          <p>
-            Unser idyllisch gelegener Campingplatz befindet sich am Waldrand
-            oberhalb von Malsch-Waldprechtsweier, eingebettet zwischen den
-            malerischen Städten Karlsruhe und Rastatt. Als ganzjähriges
-            Urlaubsziel am Rande des nördlichen Schwarzwaldes bieten wir Ihnen
-            eine Oase der Ruhe und eine Vielfalt an Freizeitmöglichkeiten.
-            Genießen Sie erholsame Tage inmitten einer beeindruckenden
-            Naturlandschaft und atmen Sie die frische, klare Luft. Unser
-            Campingplatz ist ebenfalls eine hervorragende Wahl für
-            Hundebesitzer.
-          </p>
-          <p>
-            Die Anlage erstreckt sich über 3,5 Hektar und verfügt über 220
-            Stellplätze - 170 für Dauercamper und 50 für Touristen. Zusätzlich
-            bieten wir eine geräumige Zeltwiese, ausgestattet mit einem
-            Kinderspielplatz und einer Bouleanlage. Für Ihren Komfort ist unser
-            modernes Sanitärgebäude auch im Winter beheizt und umfasst getrennte
-            Waschräume, private Wasch- und Duschkabinen, einen separaten Ausguss
-            für Chemietoiletten und eine barrierefreie Toilette mit Dusche.
-            Zusätzliche Einrichtungen wie eine Spülküche und eine
-            Baby-Wickelstation stehen Ihnen ebenfalls zur Verfügung.
-          </p>
-        </ContentCard>
-      </div>
-    </Article>
-    <Article>
-      <h1
-        class="text-xl lg:text-2xl text-stone-100 text-center md:text-left px-2"
-      >
-        Freizeitangebot
-      </h1>
-      <div
-        class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
-      >
-        <Image src={platz4.src} alt="Weg auf Campingplatz" client:load />
-        <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
-          <p>
-            Unser Campingplatz bietet den idealen Rückzugsort für eine erholsame
-            Auszeit, fernab vom hektischen Alltag. Gleichzeitig können Sie Ihren
-            Aufenthalt durch eine Vielzahl von Aktivitäten und Ausflugszielen im
-            nördlichen Schwarzwald und dem charmanten Elsass mit seinem
-            berühmten Töpferdorf Soufflenheim bereichern. Für Wasserspaß ist das
-            nahegelegene, neu gestaltete und beheizte Freibad perfekt geeignet.
-            Entdecken Sie die Umgebung mit ihren vielfältigen
-          </p>
-          <p>
-            Freizeitmöglichkeiten. Dazu gehören ein Minigolfplatz, ein
-            Kneipp-Tretbecken und ein Kinderspielplatz mit Wasserspielen, die
-            sich direkt bei unserer Mehrzweckhalle im Ort befinden. Kulturelle
-            Erlebnisse bieten Schlossbesichtigungen in Karlsruhe und Rastatt
-            sowie Spaziergänge durch die malerische Innenstadt von Baden-Baden.
-          </p>
-          <p>
-            Für Wellnessliebhaber gibt es in der näheren Umgebung zahlreiche
-            Mineral- und Thermalbäder mit Wellness-Angeboten, darunter die
-            Albtherme in Waldbronn, das Rotherma in Bad Rothenfels und die
-            Caracalla- oder Siebentäler-Therme in Baden-Baden. Direkt vom
-            Campingplatz aus können Sie eine hundert Kilometer lange, gut
-            ausgeschilderte Nordic-Walking-Route erkunden. Eine Liste mit
-            sehenswerten Ausflugszielen inklusive Entfernungsangaben sowie einen
-            Nordic-Walking-Routenplan erhalten Sie auf Anfrage gerne an unserer
-            Rezeption.
-          </p>
-        </ContentCard>
-      </div>
-    </Article>
-  </div>
   <div class="flex flex-col gap-3">
+    <div class="flex flex-col gap-6 items-center">
+      <Article>
+        <div
+          class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
+        >
+          <Image src={platz6.src} alt="Wohnwägen" client:load />
+          <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
+            <h1 class="font-bold">Unser Platz</h1>
+            <p>
+              Unser idyllisch gelegener Campingplatz befindet sich am Waldrand
+              oberhalb von Malsch-Waldprechtsweier, eingebettet zwischen den
+              malerischen Städten Karlsruhe und Rastatt. Als ganzjähriges
+              Urlaubsziel am Rande des nördlichen Schwarzwaldes bieten wir Ihnen
+              eine Oase der Ruhe und eine Vielfalt an Freizeitmöglichkeiten.
+              Genießen Sie erholsame Tage inmitten einer beeindruckenden
+              Naturlandschaft und atmen Sie die frische, klare Luft. Unser
+              Campingplatz ist ebenfalls eine hervorragende Wahl für
+              Hundebesitzer.
+            </p>
+            <p>
+              Die Anlage erstreckt sich über 3,5 Hektar und verfügt über 220
+              Stellplätze - 170 für Dauercamper und 50 für Touristen. Zusätzlich
+              bieten wir eine geräumige Zeltwiese, ausgestattet mit einem
+              Kinderspielplatz und einer Bouleanlage. Für Ihren Komfort ist
+              unser modernes Sanitärgebäude auch im Winter beheizt und umfasst
+              getrennte Waschräume, private Wasch- und Duschkabinen, einen
+              separaten Ausguss für Chemietoiletten und eine barrierefreie
+              Toilette mit Dusche. Zusätzliche Einrichtungen wie eine Spülküche
+              und eine Baby-Wickelstation stehen Ihnen ebenfalls zur Verfügung.
+            </p>
+          </ContentCard>
+        </div>
+      </Article>
+      <Article>
+        <div
+          class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
+        >
+          <Image src={platz4.src} alt="Weg auf Campingplatz" client:load />
+          <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
+            <h1 class="font-bold">Freizeitangebot</h1>
+            <p>
+              Unser Campingplatz bietet den idealen Rückzugsort für eine
+              erholsame Auszeit, fernab vom hektischen Alltag. Gleichzeitig
+              können Sie Ihren Aufenthalt durch eine Vielzahl von Aktivitäten
+              und Ausflugszielen im nördlichen Schwarzwald und dem charmanten
+              Elsass mit seinem berühmten Töpferdorf Soufflenheim bereichern.
+              Für Wasserspaß ist das nahegelegene, neu gestaltete und beheizte
+              Freibad perfekt geeignet. Entdecken Sie die Umgebung mit ihren
+              vielfältigen
+            </p>
+            <p>
+              Freizeitmöglichkeiten. Dazu gehören ein Minigolfplatz, ein
+              Kneipp-Tretbecken und ein Kinderspielplatz mit Wasserspielen, die
+              sich direkt bei unserer Mehrzweckhalle im Ort befinden. Kulturelle
+              Erlebnisse bieten Schlossbesichtigungen in Karlsruhe und Rastatt
+              sowie Spaziergänge durch die malerische Innenstadt von
+              Baden-Baden.
+            </p>
+            <p>
+              Für Wellnessliebhaber gibt es in der näheren Umgebung zahlreiche
+              Mineral- und Thermalbäder mit Wellness-Angeboten, darunter die
+              Albtherme in Waldbronn, das Rotherma in Bad Rothenfels und die
+              Caracalla- oder Siebentäler-Therme in Baden-Baden. Direkt vom
+              Campingplatz aus können Sie eine hundert Kilometer lange, gut
+              ausgeschilderte Nordic-Walking-Route erkunden. Eine Liste mit
+              sehenswerten Ausflugszielen inklusive Entfernungsangaben sowie
+              einen Nordic-Walking-Routenplan erhalten Sie auf Anfrage gerne an
+              unserer Rezeption.
+            </p>
+          </ContentCard>
+        </div>
+      </Article>
+    </div>
     <h1
       class="text-xl lg:text-2xl text-stone-100 text-center md:text-left px-2 w-full"
     >

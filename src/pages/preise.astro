@@ -5,9 +5,11 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Preise" currentPage="preise">
   <h1 class="text-white font-bold p-6 text-xl lg:text-3xl">Preisliste</h1>
-  <div class="flex flex-col md:flex-row items-start md:w-4/5 gap-4 px-2 mb-6 text-sm">
+  <div
+    class="flex flex-col md:flex-row items-start md:w-4/5 gap-4 px-2 mb-6 text-sm"
+  >
     <div class="flex flex-col gap-4">
-      <ContentCard addStyles="shrink">
+      <ContentCard>
         <table class="w-full mb-3">
           <thead>
             <tr>
@@ -99,7 +101,7 @@ import Layout from "../layouts/Layout.astro";
           </p>
         </div>
       </ContentCard>
-      <ContentCard addStyles="">
+      <ContentCard>
         <h1 class="font-bold pb-2">Wissenswertes</h1>
         <div class="flex flex-col gap-3">
           <div class="flex flex-col gap-1">
@@ -131,14 +133,14 @@ import Layout from "../layouts/Layout.astro";
       </ContentCard>
     </div>
     <div class="flex flex-col gap-4">
-      <ContentCard addStyles="">
+      <ContentCard>
         <h1 class="font-bold pb-2">Öffnungszeiten</h1>
         <div class="flex flex-col gap-1">
           <p>1. April – 30. September: 8.00 – 20.00 Uhr</p>
           <p>1. Oktober – 31 März: 8.00 – 17.00 Uhr</p>
         </div>
       </ContentCard>
-      <ContentCard addStyles="">
+      <ContentCard>
         <table class="w-full mb-3">
           <thead>
             <tr>
@@ -164,7 +166,7 @@ import Layout from "../layouts/Layout.astro";
           </p><b>Sparangebote und Saisonplätze sind davon ausgeschlossen.</b>
         </div>
       </ContentCard>
-      <ContentCard addStyles="">
+      <ContentCard>
         <h1 class="font-bold pb-2">Abstellplätze</h1>
         <div class="flex flex-col gap-1">
           <p>Für Wohnwagen oder Wohnmobile, mtl. 30,00€</p>

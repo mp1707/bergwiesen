@@ -23,7 +23,7 @@ const Image: React.FC<Props> = ({ src, alt, addStyles }: Props) => {
           <img
             src={src}
             alt={alt}
-            className="w-auto rounded-lg object-cover object-center shadow-2xl"
+            className="w-auto max-h-screen rounded-lg object-cover object-center shadow-2xl"
           />
           {/* Close button */}
           <div className="-space-y-0.5 absolute top-11 right-1 mx-5">
