@@ -18,7 +18,7 @@ const MobileNav = ({
         }`}
       >
        <div/>
-        <i className="">{title}</i>
+        {/* <i className="">{title}</i> */}
         <div className="flex items-center gap-2">
           <h1 className="lg:hidden">Menü</h1>
           <div className="space-y-1 ">
@@ -56,7 +56,7 @@ const MobileNav = ({
               <a
                 href="/gastronomie"
                 className={
-                  currentPage === "gastronomie"
+                  currentPage === "/gastronomie"
                     ? "bg-slate-500 text-stone-100 px-2 py-1 rounded-lg"
                     : "px-2 py-1"
                 }

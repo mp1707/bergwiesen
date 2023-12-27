@@ -13,7 +13,7 @@ const Image: React.FC<Props> = ({ src, alt, addStyles }: Props) => {
         src={src}
         alt={alt}
         onClick={() => setZoomed((prevZoom) => !prevZoom)}
-        className={`w-screen lg:w-80 h-64 rounded-lg object-cover object-center shadow-2xl hover:-translate-y-1 transition ease-linear ${addStyles}`}
+        className={`w-screen lg:w-80 h-64 rounded-lg object-cover object-center shadow-2xl hover:scale-102 transition ease-linear duration-75 ${addStyles}`}
       />
       {zoomed && (
         <div
@@ -25,6 +25,7 @@ const Image: React.FC<Props> = ({ src, alt, addStyles }: Props) => {
             alt={alt}
             className="w-auto rounded-lg object-cover object-center shadow-2xl"
           />
+          {/* Close button */}
           <div className="-space-y-0.5 absolute top-11 right-1 mx-5">
             <span className="block h-0.5 w-6 bg-white rotate-45"></span>
             <span className="block h-0.5 w-6 bg-white -rotate-45"></span>

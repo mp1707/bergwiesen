@@ -4,325 +4,183 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Preise" currentPage="preise">
-  <main>
-    <h1 class="flex flex-col items-center text-white font-bold py-6 text-md lg:text-3xl">
-      Preisliste
-    </h1>
-    <div
-      class="w-full flex flex-wrap items-center justify-center gap-4 px-2 mb-6 text-sm"
-    >
-      <ContentCard addStyles="w-full md:w-2/3 lg:w-2/5">
-        <table class="w-full">
+  <h1 class="text-white font-bold p-6 text-xl lg:text-3xl">Preisliste</h1>
+  <div class="flex flex-col md:flex-row items-start md:w-4/5 gap-4 px-2 mb-6 text-sm">
+    <div class="flex flex-col gap-4">
+      <ContentCard addStyles="shrink">
+        <table class="w-full mb-3">
           <thead>
             <tr>
-              <th class="text-start">Sonderpreise</th>
+              <th class="text-start pb-2">Campingpreisliste</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1 Stunde</td>
-              <td>100€</td>
+              <td>Caravan mit PKW / Nacht</td>
+              <td>12,00€</td>
             </tr>
             <tr>
-              <td>2 Stunden</td>
-              <td>200€</td>
+              <td>Motorcaravan / Nacht</td>
+              <td>12,00€</td>
             </tr>
             <tr>
-              <td>3 Stunden</td>
-              <td>300€</td>
+              <td>Motorcaravan mit PKW oder Anhänger / Nacht</td>
+              <td>15,00€</td>
             </tr>
             <tr>
-              <td>4 Stunden</td>
-              <td>400€</td>
+              <td>Erwachsene / Nacht</td>
+              <td>8,00€</td>
             </tr>
             <tr>
-              <td>5 Stunden</td>
-              <td>500€</td>
+              <td>Kinder 3-12 J. / Nacht</td>
+              <td>5,50€</td>
             </tr>
             <tr>
-              <td>6 Stunden</td>
-              <td>600€</td>
+              <td>Strom: bis 3 Nächte, je Caravan</td>
+              <td>3,50€</td>
             </tr>
             <tr>
-              <td>7 Stunden</td>
-              <td>700€</td>
+              <td>Strom: bis 3 Nächte, je Motorcaravan</td>
+              <td>4,50€</td>
             </tr>
             <tr>
-              <td>8 Stunden</td>
-              <td>800€</td>
+              <td>Strom: bis 3 Nächte, je Zeltplatz</td>
+              <td>3,00€</td>
             </tr>
             <tr>
-              <td>9 Stunden</td>
-              <td>900€</td>
+              <td>Strom über 3 Nächte, je Kw/h</td>
+              <td>0,80€</td>
             </tr>
             <tr>
-              <td>10 Stunden</td>
-              <td>1000€</td>
+              <td>Stromanschlussgebühr, einmalig</td>
+              <td>2,00€</td>
             </tr>
             <tr>
-              <td>11 Stunden</td>
-              <td>1100€</td>
+              <td>Tagesbesucher</td>
+              <td>4,00€</td>
             </tr>
             <tr>
-              <td>12 Stunden</td>
-              <td>1200€</td>
+              <td>Tagesbesucher, Kind 3-12 J.</td>
+              <td>3,00€</td>
             </tr>
             <tr>
-              <td>13 Stunden</td>
-              <td>1300€</td>
+              <td>Zelt bis 3P. / Nacht</td>
+              <td>6,00€</td>
             </tr>
             <tr>
-              <td>14 Stunden</td>
-              <td>1400€</td>
+              <td>Zelt bis 4P. / Nacht</td>
+              <td>8,00€</td>
             </tr>
             <tr>
-              <td>15 Stunden</td>
-              <td>1500€</td>
+              <td>Pavillon 3×3 m / Nacht</td>
+              <td>8,00€</td>
             </tr>
             <tr>
-              <td>16 Stunden</td>
-              <td>1600€</td>
+              <td>Auto / Nacht</td>
+              <td>3,00€</td>
             </tr>
             <tr>
-              <td>17 Stunden</td>
+              <td>Motorrad / Nacht</td>
+              <td>3,00€</td>
+            </tr>
+            <tr>
+              <td>Hund / Nacht</td>
+              <td>3,00€</td>
             </tr>
           </tbody>
         </table>
+        <div class="flex flex-col gap-1 italic">
+          <p>Preise gültig ab 01.07.2022</p>
+          <p>Preisänderungen vorbehalten</p>
+          <p>
+            Mitglieder des DCC Deutscher Camping-Club e.V. erhalten 10 %
+            Nachlass auf die Personengebühr. Müllentsorgung und Warmwasser
+            (Duschen) gebührenfrei.
+          </p>
+        </div>
       </ContentCard>
-      <ContentCard addStyles="w-full md:w-2/3 lg:w-2/5">
-        <table class="w-full">
-          <thead>
-            <tr>
-              <th class="text-start">Sonderpreise</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1 Stunde</td>
-              <td>100€</td>
-            </tr>
-            <tr>
-              <td>2 Stunden</td>
-              <td>200€</td>
-            </tr>
-            <tr>
-              <td>3 Stunden</td>
-              <td>300€</td>
-            </tr>
-            <tr>
-              <td>4 Stunden</td>
-              <td>400€</td>
-            </tr>
-            <tr>
-              <td>5 Stunden</td>
-              <td>500€</td>
-            </tr>
-            <tr>
-              <td>6 Stunden</td>
-              <td>600€</td>
-            </tr>
-            <tr>
-              <td>7 Stunden</td>
-              <td>700€</td>
-            </tr>
-            <tr>
-              <td>8 Stunden</td>
-              <td>800€</td>
-            </tr>
-            <tr>
-              <td>9 Stunden</td>
-              <td>900€</td>
-            </tr>
-            <tr>
-              <td>10 Stunden</td>
-              <td>1000€</td>
-            </tr>
-            <tr>
-              <td>11 Stunden</td>
-              <td>1100€</td>
-            </tr>
-            <tr>
-              <td>12 Stunden</td>
-              <td>1200€</td>
-            </tr>
-            <tr>
-              <td>13 Stunden</td>
-              <td>1300€</td>
-            </tr>
-            <tr>
-              <td>14 Stunden</td>
-              <td>1400€</td>
-            </tr>
-            <tr>
-              <td>15 Stunden</td>
-              <td>1500€</td>
-            </tr>
-            <tr>
-              <td>16 Stunden</td>
-              <td>1600€</td>
-            </tr>
-            <tr>
-              <td>17 Stunden</td>
-            </tr>
-          </tbody>
-        </table>
-      </ContentCard>
-      <ContentCard addStyles="w-full md:w-2/3 lg:w-2/5">
-        <table class="w-full">
-          <thead>
-            <tr>
-              <th class="text-start">Sonderpreise</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1 Stunde</td>
-              <td>100€</td>
-            </tr>
-            <tr>
-              <td>2 Stunden</td>
-              <td>200€</td>
-            </tr>
-            <tr>
-              <td>3 Stunden</td>
-              <td>300€</td>
-            </tr>
-            <tr>
-              <td>4 Stunden</td>
-              <td>400€</td>
-            </tr>
-            <tr>
-              <td>5 Stunden</td>
-              <td>500€</td>
-            </tr>
-            <tr>
-              <td>6 Stunden</td>
-              <td>600€</td>
-            </tr>
-            <tr>
-              <td>7 Stunden</td>
-              <td>700€</td>
-            </tr>
-            <tr>
-              <td>8 Stunden</td>
-              <td>800€</td>
-            </tr>
-            <tr>
-              <td>9 Stunden</td>
-              <td>900€</td>
-            </tr>
-            <tr>
-              <td>10 Stunden</td>
-              <td>1000€</td>
-            </tr>
-            <tr>
-              <td>11 Stunden</td>
-              <td>1100€</td>
-            </tr>
-            <tr>
-              <td>12 Stunden</td>
-              <td>1200€</td>
-            </tr>
-            <tr>
-              <td>13 Stunden</td>
-              <td>1300€</td>
-            </tr>
-            <tr>
-              <td>14 Stunden</td>
-              <td>1400€</td>
-            </tr>
-            <tr>
-              <td>15 Stunden</td>
-              <td>1500€</td>
-            </tr>
-            <tr>
-              <td>16 Stunden</td>
-              <td>1600€</td>
-            </tr>
-            <tr>
-              <td>17 Stunden</td>
-            </tr>
-          </tbody>
-        </table>
-      </ContentCard>
-      <ContentCard addStyles="w-full md:w-2/3 lg:w-2/5">
-        <table class="w-full">
-          <thead>
-            <tr>
-              <th class="text-start">Sonderpreise</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1 Stunde</td>
-              <td>100€</td>
-            </tr>
-            <tr>
-              <td>2 Stunden</td>
-              <td>200€</td>
-            </tr>
-            <tr>
-              <td>3 Stunden</td>
-              <td>300€</td>
-            </tr>
-            <tr>
-              <td>4 Stunden</td>
-              <td>400€</td>
-            </tr>
-            <tr>
-              <td>5 Stunden</td>
-              <td>500€</td>
-            </tr>
-            <tr>
-              <td>6 Stunden</td>
-              <td>600€</td>
-            </tr>
-            <tr>
-              <td>7 Stunden</td>
-              <td>700€</td>
-            </tr>
-            <tr>
-              <td>8 Stunden</td>
-              <td>800€</td>
-            </tr>
-            <tr>
-              <td>9 Stunden</td>
-              <td>900€</td>
-            </tr>
-            <tr>
-              <td>10 Stunden</td>
-              <td>1000€</td>
-            </tr>
-            <tr>
-              <td>11 Stunden</td>
-              <td>1100€</td>
-            </tr>
-            <tr>
-              <td>12 Stunden</td>
-              <td>1200€</td>
-            </tr>
-            <tr>
-              <td>13 Stunden</td>
-              <td>1300€</td>
-            </tr>
-            <tr>
-              <td>14 Stunden</td>
-              <td>1400€</td>
-            </tr>
-            <tr>
-              <td>15 Stunden</td>
-              <td>1500€</td>
-            </tr>
-            <tr>
-              <td>16 Stunden</td>
-              <td>1600€</td>
-            </tr>
-            <tr>
-              <td>17 Stunden</td>
-            </tr>
-          </tbody>
-        </table>
+      <ContentCard addStyles="">
+        <h1 class="font-bold pb-2">Wissenswertes</h1>
+        <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-1">
+            <p>Gasflaschen im Tausch:</p>
+            <p>5 kg und 11 kg graue Eigentumsflaschen</p>
+            <p>
+              Auf Anfrage erhalten Sie eine von uns aufgestelle Liste
+              sehenswerter Ausflugsziele in der näheren Umgebung.
+            </p>
+          </div>
+          <div class="flex flex-col gap-1">
+            <p>Auf unserem Platz:</p>
+            <ul class="list-disc pl-4">
+              <li>Zeltwiese</li>
+              <li>Kinderspielplatz</li>
+              <li>Bouleanlage</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-1">
+            <p>In der Nähe:</p>
+            <ul class="list-disc pl-4">
+              <li>Beheiztes Freischwimmbad</li>
+              <li>Minigolf</li>
+              <li>Kneipp – Tretbecken</li>
+              <li>Kinderspielplatz mit Wasserspielgeräten</li>
+            </ul>
+          </div>
+        </div>
       </ContentCard>
     </div>
-  </main>
+    <div class="flex flex-col gap-4">
+      <ContentCard addStyles="">
+        <h1 class="font-bold pb-2">Öffnungszeiten</h1>
+        <div class="flex flex-col gap-1">
+          <p>1. April – 30. September: 8.00 – 20.00 Uhr</p>
+          <p>1. Oktober – 31 März: 8.00 – 17.00 Uhr</p>
+        </div>
+      </ContentCard>
+      <ContentCard addStyles="">
+        <table class="w-full mb-3">
+          <thead>
+            <tr>
+              <th class="text-start pb-2">Sparangebote</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2 Erwachsene Wohnwagen / Wohnmobil</td>
+              <td>24,00€</td>
+            </tr>
+            <tr>
+              <td>Kind 3 – 12 Jahre</td>
+              <td>4,50€</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="flex flex-col gap-1">
+          <p>zzgl. Strom nach Verbrauch</p>
+          <p>
+            Mitglieder des DCC Deutscher Camping-Club e.V. erhalten 10 %
+            Nachlass auf die Personengebühr.
+          </p><b>Sparangebote und Saisonplätze sind davon ausgeschlossen.</b>
+        </div>
+      </ContentCard>
+      <ContentCard addStyles="">
+        <h1 class="font-bold pb-2">Abstellplätze</h1>
+        <div class="flex flex-col gap-1">
+          <p>Für Wohnwagen oder Wohnmobile, mtl. 30,00€</p>
+
+          <p></p>
+           Bei diesen Plätzen handelt es sich um einen reinen Abstellplatz.
+        </div>
+        <p>Folgende Serviceleistungen sind nicht enthalten:</p>
+        <ul class="list-disc pl-4">
+          <li>Stromanschluss</li>
+          <li>Frisch- und Abwasser</li>
+          <li>Fahrzeuge waschen</li>
+          <li>Müllentsorgung</li>
+          <li>Chemietoilettenentleerung</li>
+        </ul>
+      </ContentCard>
+    </div>
+  </div>
 </Layout>

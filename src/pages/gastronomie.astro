@@ -5,35 +5,33 @@ import ContentCard from "../components/ContentCard.astro";
 ---
 
 <Layout title="Gastronomie" currentPage="gastronomie">
-  <main>
-    <article class="flex flex-col items-center gap-5 p-2 text-sm">
-      <h1 class="text-white font-bold pt-6 pb-4 text-md lg:text-3xl">
-        Willkommen im Campingstüble
-      </h1>
-      <img
-        src={img.src}
-        alt="Campingstueble"
-        class="w-full h-64 rounded-lg md:w-2/3 object-cover shadow-2xl"
-      />
-      <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
-        <h1 class="font-bold">Öffentliche Gaststätte</h1>
-        <p>
-          Unser Campingstüble ist eine öffentliche Gaststätte zu der sich auch
-          viele Gäste aus der näheren und weiteren Umgebung einfinden. Genießen
-          Sie gutes Essen und Trinken in ruhiger und gemütlicher Atmosphäre in
-          unserer Gaststätte mit überdachter Terrasse und Biergarten. Das
-          reichhaltige Angebot an frisch zubereiteten nationalen und
-          internationalen Gerichten wird Sie überraschen. Hier kocht die Chefin
-          noch selbst.
-        </p>
-        <p class="font-bold">Öffnungszeiten</p>
-        <p>Mi. – So. 17.00 Uhr – 22.00 Uhr</p>
-        <p>Die Gaststätte hat vom 11.- 25.10 geschlossen.</p>
-        <p class="font-bold">Ruhetag</p>
-        <p>Montag und Dienstag</p>
-        <p class="font-bold">Hinweise</p>
-        <p>Bitte mit Reservierung (Tel. 07246 1467)</p>
-      </ContentCard>
-    </article>
-  </main>
+  <article class="flex flex-col items-center gap-5 p-2 text-sm">
+    <h1 class="text-white font-bold pt-6 pb-4 text-md lg:text-3xl">
+      Willkommen im Campingstüble
+    </h1>
+    <img
+      src={img.src}
+      alt="Campingstueble"
+      class="w-full h-64 rounded-lg md:w-2/3 object-cover shadow-2xl"
+    />
+    <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
+      <h1 class="font-bold">Öffentliche Gaststätte</h1>
+      <p>
+        Unser Campingstüble ist eine öffentliche Gaststätte zu der sich auch
+        viele Gäste aus der näheren und weiteren Umgebung einfinden. Genießen
+        Sie gutes Essen und Trinken in ruhiger und gemütlicher Atmosphäre in
+        unserer Gaststätte mit überdachter Terrasse und Biergarten. Das
+        reichhaltige Angebot an frisch zubereiteten nationalen und
+        internationalen Gerichten wird Sie überraschen. Hier kocht die Chefin
+        noch selbst.
+      </p>
+      <p class="font-bold">Öffnungszeiten</p>
+      <p>Mi. – So. 17.00 Uhr – 22.00 Uhr</p>
+      <p>Die Gaststätte hat vom 11.- 25.10 geschlossen.</p>
+      <p class="font-bold">Ruhetag</p>
+      <p>Montag und Dienstag</p>
+      <p class="font-bold">Hinweise</p>
+      <p>Bitte mit Reservierung (Tel. 07246 1467)</p>
+    </ContentCard>
+  </article>
 </Layout>

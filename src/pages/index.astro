@@ -1,6 +1,5 @@
 ---
 import ContentCard from "../components/ContentCard.astro";
-import H1 from "../components/H1.astro";
 import Layout from "../layouts/Layout.astro";
 import whiteLogo from "../assets/logoW.png";
 import platz1 from "../assets/platz1.jpg";
@@ -23,13 +22,23 @@ const images = [
 ---
 
 <Layout title="Willkommen" currentPage="start">
-  <main class="px-2 pb-20 flex flex-col gap-6 items-center">
-    <img src={whiteLogo.src} alt="logo" class="w-2/3 md:w-3/5 lg:w-1/4 mt-12 mb-4" />
-    <div class="flex flex-col gap-10 items-center">
-      <Article>
+  <img
+    src={whiteLogo.src}
+    alt="logo"
+    class="w-2/3 md:w-3/5 lg:w-1/4 mt-12 mb-4"
+  />
+  <div class="flex flex-col gap-6 items-center">
+    <Article>
+      <h1
+        class="text-xl lg:text-2xl text-stone-100 text-center md:text-left px-2"
+      >
+        Unser Platz
+      </h1>
+      <div
+        class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
+      >
         <Image src={platz6.src} alt="Wohnwägen" client:load />
         <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
-          <h1 class="font-bold">Unser Platz</h1>
           <p>
             Unser idyllisch gelegener Campingplatz befindet sich am Waldrand
             oberhalb von Malsch-Waldprechtsweier, eingebettet zwischen den
@@ -53,11 +62,19 @@ const images = [
             Baby-Wickelstation stehen Ihnen ebenfalls zur Verfügung.
           </p>
         </ContentCard>
-      </Article>
-      <Article>
+      </div>
+    </Article>
+    <Article>
+      <h1
+        class="text-xl lg:text-2xl text-stone-100 text-center md:text-left px-2"
+      >
+        Freizeitangebot
+      </h1>
+      <div
+        class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
+      >
         <Image src={platz4.src} alt="Weg auf Campingplatz" client:load />
         <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
-          <h1 class="font-bold">Freizeitangebot</h1>
           <p>
             Unser Campingplatz bietet den idealen Rückzugsort für eine erholsame
             Auszeit, fernab vom hektischen Alltag. Gleichzeitig können Sie Ihren
@@ -86,9 +103,15 @@ const images = [
             Rezeption.
           </p>
         </ContentCard>
-      </Article>
-    </div>
-    <H1 addStyles="text-stone-100">Impressionen</H1>
+      </div>
+    </Article>
+  </div>
+  <div class="flex flex-col gap-3">
+    <h1
+      class="text-xl lg:text-2xl text-stone-100 text-center md:text-left px-2 w-full"
+    >
+      Impressionen
+    </h1>
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center w-full lg:w-auto gap-5"
     >
@@ -100,5 +123,5 @@ const images = [
         ))
       }
     </div>
-  </main>
+  </div>
 </Layout>

@@ -9,11 +9,11 @@ import Article from "../components/Article.astro";
 ---
 
 <Layout title="Countryfest" currentPage="countryfest">
-  <main class="flex flex-col items-center px-2 gap-10 pb-6">
+  <h1 class="text-white font-bold py-6 text-xl lg:text-3xl">
+    Countryfest
+  </h1>
+  <div class="flex flex-col gap-10 items-center">
     <article class="flex flex-col items-center gap-5 text-sm">
-      <h1 class="text-white font-bold pt-6 pb-4 text-md lg:text-3xl">
-        Countryfest
-      </h1>
       <img
         src={img.src}
         alt="Campingstueble"
@@ -32,26 +32,36 @@ import Article from "../components/Article.astro";
         </p>
       </ContentCard>
     </article>
-    <Article addStyles="flex-col">
-      <Image src={img2.src} alt="Live Musik" client:load />
-      <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
-        <h1 class="font-bold">Live Musik</h1>
-        <p>
-          Am Samstag stehen wir, die Betreiber des Campingplatzes, ab 20.00 Uhr
-          selbst auf der Bühne und werden Sie den ganzen Abend mit guter
-          Countrymusik unterhalten.
-        </p>
-      </ContentCard>
+
+    <!-- nEUEUEU -->
+    <Article>
+      <div
+        class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
+      >
+        <Image src={img2.src} alt="Live Musik" client:load />
+        <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
+          <h1 class="font-bold">Live Musik</h1>
+          <p>
+            Am Samstag stehen wir, die Betreiber des Campingplatzes, ab 20.00
+            Uhr selbst auf der Bühne und werden Sie den ganzen Abend mit guter
+            Countrymusik unterhalten.
+          </p>
+        </ContentCard>
+      </div>
     </Article>
     <Article>
-      <Image src={img3.src} alt="Cocktailbar bei Nacht" client:load />
-      <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
-        <h1 class="font-bold">Molly's Bar</h1>
-        <p>
-          Ab Samstags ab 21.00 Uhr öffnet unsere Bar für euch. Entspannt euch in
-          unserem gemütlichen Ambiente und genießt leckere Cocktails.
-        </p>
-      </ContentCard>
+      <div
+        class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
+      >
+        <Image src={img3.src} alt="Cocktailbar bei Nacht" client:load />
+        <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
+          <h1 class="font-bold">Molly's Bar</h1>
+          <p>
+            Ab Samstags ab 21.00 Uhr öffnet unsere Bar für euch. Entspannt euch
+            in unserem gemütlichen Ambiente und genießt leckere Cocktails.
+          </p>
+        </ContentCard>
+      </div>
     </Article>
-  </main>
+  </div>
 </Layout>
