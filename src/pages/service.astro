@@ -4,70 +4,74 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Service" currentPage="service">
-  <h1 class="text-white font-bold py-6 text-xl lg:text-3xl">
-    Unsere Serviceleistungen
-  </h1>
-  <div
-    class="grid md:grid-cols-2 lg:grid-cols-3 items-stretch md:w-4/5 gap-4 px-2 mb-6 text-sm"
-  >
-    <ContentCard>
-      <h1 class="font-bold pb-2">Anmeldung</h1>
-      <p>
-        Bei der Anmeldung bekommen Sie auf Wunsch einen Schrankenschlüssel.
-        Dieser Schlüssel darf nicht an Dritte weitergegeben werden und
-        berechtigt nur Sie zur Einfahrt in den Campingplatz.
-      </p>
-      <p class="pt-3">
-        Anreise in der Mittagsruhe nicht möglich (zwischen 13.00-15.00 Uhr).
-      </p>
-    </ContentCard>
-    <ContentCard>
-      <h1 class="font-bold pb-2">Besucher</h1>
-      <p>
-        Besucher sind anzumelden und die Gebühren sofort oder vor der Abreise zu
-        entrichten. Besuchern ist das benutzen der Duschanlagen nicht erlaubt.
-      </p>
-    </ContentCard>
-    <ContentCard>
-      <h1 class="font-bold pb-2">Abreise</h1>
-      <p>
-        Besucher sind anzumelden und die Gebühren sofort oder vor der Abreise zu
-        entrichten. Besuchern ist das benutzen der Duschanlagen nicht erlaubt.
-      </p>
-    </ContentCard>
-
-    <ContentCard>
-      <h1 class="font-bold pb-2">Hunde</h1>
-      <p>
-        Hunde aller Größen und Rassen sind nur auf den Platzteilen B + C erlaubt
-        und grundsätzlich an der Leine zu halten. Verunreinigung sind sofort zu
-        entfernen.
-      </p>
-    </ContentCard>
-    <ContentCard>
-      <h1 class="font-bold pb-2">Platzruhe</h1>
-      <p>
-        Zwischen 13.00 und 15.00 Uhr (Mittagsruhe) sowie in der Zeit von 22.00
-        bis 7.00 Uhr (Nachtruhe) sind unsere Schranken geschlossen.
-      </p>
-    </ContentCard>
-    <ContentCard>
-      <div class="flex flex-col gap-1 pb-3">
-        <h1 class="font-bold pb-2">Müll</h1>
-        <p>Wie überall wird auch bei uns der Müll getrennt.</p>
-        <p><b>Altglas</b> in die Glascontainer</p>
-        <p><b>Restmüll</b> in die graue Tonne Wertstoff</p>
+  <main class="flex flex-col items-center px-2 pb-20">
+    <h1 class="text-white font-bold py-6 text-xl lg:text-3xl">
+      Unsere Serviceleistungen
+    </h1>
+    <div
+      class="grid md:grid-cols-2 lg:grid-cols-3 items-stretch md:w-4/5 gap-4 px-2 mb-6 text-sm"
+    >
+      <ContentCard>
+        <h1 class="font-bold pb-2">Anmeldung</h1>
         <p>
-          <b>Kunststoffverpackungen</b>, Blechdosen und Papier in die grüne
-          Tonne.
+          Bei der Anmeldung bekommen Sie auf Wunsch einen Schrankenschlüssel.
+          Dieser Schlüssel darf nicht an Dritte weitergegeben werden und
+          berechtigt nur Sie zur Einfahrt in den Campingplatz.
         </p>
-      </div>
-      <p>
-        Andere Materialien wie Farben, Lacke, Batterien, Gift.- oder Sperrmüll
-        dürfen auf unserem Campingplatz nicht entsorgt werden. Für
-        Beschädigungen oder abhanden gekommenes Eigentum übernimmt der Platzwart
-        keine Haftung.
-      </p>
-    </ContentCard>
-  </div>
+        <p class="pt-3">
+          Anreise in der Mittagsruhe nicht möglich (zwischen 13.00-15.00 Uhr).
+        </p>
+      </ContentCard>
+      <ContentCard>
+        <h1 class="font-bold pb-2">Besucher</h1>
+        <p>
+          Besucher sind anzumelden und die Gebühren sofort oder vor der Abreise
+          zu entrichten. Besuchern ist das benutzen der Duschanlagen nicht
+          erlaubt.
+        </p>
+      </ContentCard>
+      <ContentCard>
+        <h1 class="font-bold pb-2">Abreise</h1>
+        <p>
+          Besucher sind anzumelden und die Gebühren sofort oder vor der Abreise
+          zu entrichten. Besuchern ist das benutzen der Duschanlagen nicht
+          erlaubt.
+        </p>
+      </ContentCard>
+
+      <ContentCard>
+        <h1 class="font-bold pb-2">Hunde</h1>
+        <p>
+          Hunde aller Größen und Rassen sind nur auf den Platzteilen B + C
+          erlaubt und grundsätzlich an der Leine zu halten. Verunreinigung sind
+          sofort zu entfernen.
+        </p>
+      </ContentCard>
+      <ContentCard>
+        <h1 class="font-bold pb-2">Platzruhe</h1>
+        <p>
+          Zwischen 13.00 und 15.00 Uhr (Mittagsruhe) sowie in der Zeit von 22.00
+          bis 7.00 Uhr (Nachtruhe) sind unsere Schranken geschlossen.
+        </p>
+      </ContentCard>
+      <ContentCard>
+        <div class="flex flex-col gap-1 pb-3">
+          <h1 class="font-bold pb-2">Müll</h1>
+          <p>Wie überall wird auch bei uns der Müll getrennt.</p>
+          <p><b>Altglas</b> in die Glascontainer</p>
+          <p><b>Restmüll</b> in die graue Tonne Wertstoff</p>
+          <p>
+            <b>Kunststoffverpackungen</b>, Blechdosen und Papier in die grüne
+            Tonne.
+          </p>
+        </div>
+        <p>
+          Andere Materialien wie Farben, Lacke, Batterien, Gift.- oder Sperrmüll
+          dürfen auf unserem Campingplatz nicht entsorgt werden. Für
+          Beschädigungen oder abhanden gekommenes Eigentum übernimmt der
+          Platzwart keine Haftung.
+        </p>
+      </ContentCard>
+    </div>
+  </main>
 </Layout>

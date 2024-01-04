@@ -13,7 +13,7 @@ const Image: React.FC<Props> = ({ src, alt, addStyles }: Props) => {
         src={src}
         alt={alt}
         onClick={() => setZoomed((prevZoom) => !prevZoom)}
-        className={`w-screen lg:w-80 h-64 rounded-lg object-cover object-center shadow-2xl hover:scale-102 transition ease-linear duration-75 ${addStyles}`}
+        className={`w-screen lg:w-80 h-64 rounded object-cover object-center shadow-2xl hover:scale-102 transition ease-linear duration-75 ${addStyles}`}
       />
       {zoomed && (
         <div

@@ -9,59 +9,61 @@ import Article from "../components/Article.astro";
 ---
 
 <Layout title="Countryfest" currentPage="countryfest">
-  <h1 class="text-white font-bold py-6 text-xl lg:text-3xl">
-    Countryfest
-  </h1>
-  <div class="flex flex-col gap-10 items-center">
-    <article class="flex flex-col items-center gap-5 text-sm">
-      <img
-        src={img.src}
-        alt="Campingstueble"
-        class="w-full h-64 rounded-lg md:w-2/3 object-cover shadow-2xl"
-      />
-      <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
-        <h1 class="font-bold">Unser Fest im Sommer</h1>
-        <p>
-          Einmal im Sommer, unter dem strahlenden Himmel, veranstalten wir unser
-          gemütliches Countryfest. Ein ganzes Wochenende lang feiern wir unsere
-          Liebe zur Country-Musik. Höhepunkt des Festes ist der Samstag, an dem
-          Livemusik von unserem Country-Duo Elke und Peter gespielt wird. Egal,
-          ob ihr leidenschaftliche Country-Fans seid oder einfach nur einen
-          entspannten Tag mit guter Gesellschaft verbringen möchtet – unser
-          Countryfest ist der perfekte Ort dafür! Wir freuen uns auf euch!
-        </p>
-      </ContentCard>
-    </article>
+  <main class="flex flex-col items-center px-2 pb-20">
+    <h1 class="text-white font-bold py-6 text-xl lg:text-3xl">Countryfest</h1>
+    <div class="flex flex-col gap-10 items-center">
+      <article class="flex flex-col items-center gap-5 text-sm">
+        <img
+          src={img.src}
+          alt="Campingstueble"
+          class="w-full h-64 rounded-lg md:w-2/3 object-cover shadow-2xl"
+        />
+        <ContentCard addStyles="flex flex-col gap-2 w-full md:w-2/3">
+          <h1 class="font-bold">Unser Fest im Sommer</h1>
+          <p>
+            Einmal im Sommer, unter dem strahlenden Himmel, veranstalten wir
+            unser gemütliches Countryfest. Ein ganzes Wochenende lang feiern wir
+            unsere Liebe zur Country-Musik. Höhepunkt des Festes ist der
+            Samstag, an dem Livemusik von unserem Country-Duo Elke und Peter
+            gespielt wird. Egal, ob ihr leidenschaftliche Country-Fans seid oder
+            einfach nur einen entspannten Tag mit guter Gesellschaft verbringen
+            möchtet – unser Countryfest ist der perfekte Ort dafür! Wir freuen
+            uns auf euch!
+          </p>
+        </ContentCard>
+      </article>
 
-    <!-- nEUEUEU -->
-    <Article>
-      <div
-        class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
-      >
-        <Image src={img2.src} alt="Live Musik" client:load />
-        <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
-          <h1 class="font-bold">Live Musik</h1>
-          <p>
-            Am Samstag stehen wir, die Betreiber des Campingplatzes, ab 20.00
-            Uhr selbst auf der Bühne und werden Sie den ganzen Abend mit guter
-            Countrymusik unterhalten.
-          </p>
-        </ContentCard>
-      </div>
-    </Article>
-    <Article>
-      <div
-        class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
-      >
-        <Image src={img3.src} alt="Cocktailbar bei Nacht" client:load />
-        <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
-          <h1 class="font-bold">Molly's Bar</h1>
-          <p>
-            Ab Samstags ab 21.00 Uhr öffnet unsere Bar für euch. Entspannt euch
-            in unserem gemütlichen Ambiente und genießt leckere Cocktails.
-          </p>
-        </ContentCard>
-      </div>
-    </Article>
-  </div>
+      <!-- nEUEUEU -->
+      <Article>
+        <div
+          class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
+        >
+          <Image src={img2.src} alt="Live Musik" client:load />
+          <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
+            <h1 class="font-bold">Live Musik</h1>
+            <p>
+              Am Samstag stehen wir, die Betreiber des Campingplatzes, ab 20.00
+              Uhr selbst auf der Bühne und werden Sie den ganzen Abend mit guter
+              Countrymusik unterhalten.
+            </p>
+          </ContentCard>
+        </div>
+      </Article>
+      <Article>
+        <div
+          class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
+        >
+          <Image src={img3.src} alt="Cocktailbar bei Nacht" client:load />
+          <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
+            <h1 class="font-bold">Molly's Bar</h1>
+            <p>
+              Ab Samstags ab 21.00 Uhr öffnet unsere Bar für euch. Entspannt
+              euch in unserem gemütlichen Ambiente und genießt leckere
+              Cocktails.
+            </p>
+          </ContentCard>
+        </div>
+      </Article>
+    </div>
+  </main>
 </Layout>
