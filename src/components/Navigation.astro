@@ -42,8 +42,8 @@ function isActive(path: string) {
     </ul>
   </div>
   <div class="navbar-end">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+    <details class="dropdown">
+      <summary tabindex="0" role="button" class="btn btn-ghost lg:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
@@ -56,7 +56,7 @@ function isActive(path: string) {
             stroke-width="2"
             d="M4 6h16M4 12h8m-8 6h16"></path></svg
         >
-      </div>
+      </summary>
       <ul
         tabindex="0"
         class="menu menu-lg dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-1"
@@ -85,6 +85,6 @@ function isActive(path: string) {
           <a href="/impressum" class={isActive("/impressum")}>Impressum</a>
         </li>
       </ul>
-    </div>
+    </details>
   </div>
 </div>
