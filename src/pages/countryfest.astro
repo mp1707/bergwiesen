@@ -13,10 +13,11 @@ import Article from "../components/Article.astro";
     <h1 class="text-white font-bold py-6 text-xl lg:text-3xl">Countryfest</h1>
     <div class="flex flex-col gap-10 items-center">
       <article class="flex flex-col items-center gap-5 text-sm">
-        <img
+        <Image
           src={img.src}
           alt="Campingstueble"
-          class="w-full h-64 rounded-lg md:w-2/3 object-cover shadow-2xl"
+          addStyles="w-full h-64 md:w-2/3 "
+          client:load
         />
         <ContentCard addStyles="flex flex-col gap-2 w-full md:w-2/3">
           <h1 class="font-bold">Unser Fest im Sommer</h1>
@@ -38,7 +39,12 @@ import Article from "../components/Article.astro";
         <div
           class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
         >
-          <Image src={img2.src} alt="Live Musik" client:load />
+          <Image
+            src={img2.src}
+            alt="Live Musik"
+            addStyles="w-full lg:w-64 h-64"
+            client:load
+          />
           <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
             <h1 class="font-bold">Live Musik</h1>
             <p>
@@ -53,7 +59,12 @@ import Article from "../components/Article.astro";
         <div
           class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
         >
-          <Image src={img3.src} alt="Cocktailbar bei Nacht" client:load />
+          <Image
+            src={img3.src}
+            alt="Cocktailbar bei Nacht"
+            addStyles="w-full lg:w-64 h-64"
+            client:load
+          />
           <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
             <h1 class="font-bold">Molly's Bar</h1>
             <p>

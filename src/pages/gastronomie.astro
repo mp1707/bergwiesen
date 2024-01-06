@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import img from "../assets/stueble1.jpeg";
 import ContentCard from "../components/ContentCard.astro";
+import Image from "../components/Image";
 ---
 
 <Layout title="Gastronomie" currentPage="gastronomie">
@@ -10,11 +11,12 @@ import ContentCard from "../components/ContentCard.astro";
       Willkommen im Campingstüble
     </h1>
     <article class="flex flex-col items-center gap-5 p-2 text-sm">
-      <img
-        src={img.src}
-        alt="Campingstueble"
-        class="w-full h-64 rounded-lg md:w-2/3 object-cover shadow-2xl"
-      />
+      <Image
+      src={img.src}
+      alt="Campingstueble"
+      addStyles="w-full h-64 md:w-2/3 "
+      client:load
+    />
       <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
         <h1 class="font-bold">Öffentliche Gaststätte</h1>
         <p>

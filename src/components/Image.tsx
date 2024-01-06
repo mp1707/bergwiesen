@@ -8,12 +8,12 @@ interface Props {
 const Image: React.FC<Props> = ({ src, alt, addStyles }: Props) => {
   const [zoomed, setZoomed] = React.useState(false);
   return (
-    <>
+    <div className={`flex items-center overflow-hidden rounded shadow-2xl ${addStyles}`}>
       <img
         src={src}
         alt={alt}
         onClick={() => setZoomed((prevZoom) => !prevZoom)}
-        className={`w-screen lg:w-80 h-64 rounded object-cover object-center shadow-2xl hover:scale-102 transition ease-linear duration-75 ${addStyles}`}
+        className={`h-full w-full object-cover object-center hover:scale-102 transition ease-linear duration-75`}
       />
       {zoomed && (
         <div
@@ -32,7 +32,7 @@ const Image: React.FC<Props> = ({ src, alt, addStyles }: Props) => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 export default Image;

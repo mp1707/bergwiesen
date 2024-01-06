@@ -23,18 +23,19 @@ const images = [
 
 <Layout title="Willkommen" currentPage="start">
   <main class="flex flex-col items-center px-2 pb-20">
-    <img
-      src={whiteLogo.src}
-      alt="logo"
-      class="w-2/3 md:w-3/5 lg:w-1/4 my-12"
-    />
+    <img src={whiteLogo.src} alt="logo" class="w-2/3 md:w-3/5 lg:w-1/4 my-12" />
     <div class="flex flex-col gap-3 items-center">
       <div class="flex flex-col gap-6 items-center">
         <Article>
           <div
             class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
           >
-            <Image src={platz6.src} alt="Wohnwägen" client:load />
+            <Image
+              src={platz6.src}
+              alt="Wohnwägen"
+              addStyles="w-full lg:w-64 h-64"
+              client:load
+            />
             <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
               <h1 class="font-bold">Unser Platz</h1>
               <p>
@@ -67,7 +68,12 @@ const images = [
           <div
             class="flex flex-col lg:flex-row items-center lg:items-start gap-5 justify-center"
           >
-            <Image src={platz4.src} alt="Weg auf Campingplatz" client:load />
+            <Image
+              src={platz4.src}
+              alt="Weg auf Campingplatz"
+              addStyles="w-full lg:w-64 h-64"
+              client:load
+            />
             <ContentCard addStyles="flex flex-col gap-2 w-full lg:w-2/3">
               <h1 class="font-bold">Freizeitangebot</h1>
               <p>
@@ -109,12 +115,17 @@ const images = [
         Impressionen
       </h1>
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center w-full md:w-2/3 gap-5"
+        class="flex flex-wrap justify-items-center w-full lg:w-4/5 gap-5 justify-center"
       >
         {
           images.map((image) => (
             <div class="col-span-1">
-              <Image src={image.src} alt={image.alt} client:load />
+              <Image
+                src={image.src}
+                alt={image.alt}
+                client:load
+                addStyles="w-full md:w-64 lg:w-64 h-64"
+              />
             </div>
           ))
         }
