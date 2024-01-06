@@ -6,7 +6,9 @@ import ContentCard from "../components/ContentCard.astro";
 
 <Layout title="Gastronomie" currentPage="gastronomie">
   <main class="flex flex-col items-center px-2 pb-20">
-    <h1 class="text-white font-bold py-6 text-xl lg:text-3xl">Willkommen im Campingstüble</h1>
+    <h1 class="text-white font-bold py-6 text-xl lg:text-3xl">
+      Willkommen im Campingstüble
+    </h1>
     <article class="flex flex-col items-center gap-5 p-2 text-sm">
       <img
         src={img.src}
@@ -30,7 +32,11 @@ import ContentCard from "../components/ContentCard.astro";
         <p class="font-bold">Ruhetag</p>
         <p>Montag und Dienstag</p>
         <p class="font-bold">Hinweise</p>
-        <p>Bitte mit Reservierung (Tel. 07246 1467)</p>
+        <p>
+          Bitte mit Reservierung (<a class="underline" href="tel:+4972461467"
+            >07246 – 1467</a
+          >)
+        </p>
       </ContentCard>
     </article>
   </main>
